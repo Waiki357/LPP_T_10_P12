@@ -4,11 +4,7 @@ require './lib/naranjero.rb'
 
 describe Naranja::Naranjero do
     before :all do
-        @naranjero = Naranjero.new
-    end
-    
-    it "La clase debe tener un metodo que inicialice las variables necesarias" do
-      expect(@naranjero).to respond_to(:initialize)
+        @naranjero = Naranja::Naranjero.new
     end
     
     it "La clase debe tener un metodo que devuelva la altura actual del naranjero" do
